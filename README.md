@@ -56,5 +56,5 @@ TARGET_LINK_LIBRARIES(${TARGET} /user/lib/libgtest-arm.a -lpthread)
 
 [  PASSED  ] 1 test.
 
-# compile eash file
+# compile each file
 aarch64-linux-gnu-g++ -std=c++11 -isystem /usr/src/gtest/include -pthread ./main.cpp /usr/lib/libgtest-arm.a -o run
