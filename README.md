@@ -55,3 +55,6 @@ TARGET_LINK_LIBRARIES(${TARGET} /user/lib/libgtest-arm.a -lpthread)
 [==========] 1 test from 1 test case ran. (0 ms total)
 
 [  PASSED  ] 1 test.
+
+# compile eash file
+aarch64-linux-gnu-g++ -std=c++11 -isystem /usr/src/gtest/include -pthread ./main.cpp /usr/lib/libgtest-arm.a -o run
